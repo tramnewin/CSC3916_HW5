@@ -44,8 +44,8 @@ class MovieList extends Component {
                                 </LinkContainer>
                             </div>
                             <Carousel.Caption>
-                                <h3>{movie.title}</h3>
-                                <BsStarFill glyph={'star'} /> {movie.avgRating} &nbsp;&nbsp; {movie.releaseDate}
+                                <h3>{movie.Title}</h3>
+                                <BsStarFill glyph={'star'} /> {movie.avgRating} &nbsp;&nbsp; {movie.Year}
                             </Carousel.Caption>
                         </Carousel.Item>
                     )}
