@@ -24,7 +24,7 @@ class MovieDetail extends Component {
                 <Card>
                     <Card.Header>Movie Detail</Card.Header>
                     <Card.Body>
-                        <Image className="image" src={this.props.selectedMovie.imageUrl} thumbnail />
+                        <Image className="image" src={this.props.selectedMovie.imageURL} thumbnail />
                     </Card.Body>
                     <ListGroup>
                         <ListGroupItem>{this.props.selectedMovie.Title}</ListGroupItem>
