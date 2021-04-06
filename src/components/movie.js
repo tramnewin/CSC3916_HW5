@@ -1,20 +1,15 @@
 import React, { Component }  from 'react';
 import {connect} from "react-redux";
-import { Glyphicon, Panel, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Panel, ListGroup, ListGroupItem } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 import { withRouter } from "react-router-dom";
 import {fetchMovie} from "../actions/movieActions";
 import {submitReview} from "../actions/movieActions";
 import { Col, Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import * as PropTypes from "prop-types";
+import {BsStarFill} from "react-icons/bs";
 //support routing by creating a new component
 
-class Glyphicon extends Component {
-    render() {
-        return null;
-    }
-}
-
-Glyphicon.propTypes = {glyph: PropTypes.string};
 
 class Movie extends Component {
 
@@ -64,7 +59,7 @@ class Movie extends Component {
             return reviews.map((review, i) =>
                 <p key={i}>
                     <b>{review.Name}</b> {review.Review}
-                    <Glyphicon glyph={'star'} /> {review.Rating}
+                    <BsStarFill glyph={'star'} /> {review.Rating}
                 </p>
             );
         }
@@ -117,7 +112,7 @@ class Movie extends Component {
                     <ListGroup>
                         <ListGroupItem>{currentMovie.title}</ListGroupItem>
                         <ListGroupItem><ActorInfo actors={currentMovie.Actors} /></ListGroupItem>
-                        <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avgRating} </h4></ListGroupItem>
+                        <ListGroupItem><h4><BsStarFill glyph={'star'} /> {currentMovie.avgRating} </h4></ListGroupItem>
                     </ListGroup>
                     <Panel.Body><ReviewInfo reviews={currentMovie.reviews} /></Panel.Body>
                     <ListGroup>
