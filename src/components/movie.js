@@ -1,11 +1,11 @@
 import React, { Component }  from 'react';
 import {connect} from "react-redux";
-import {Panel, ListGroup, ListGroupItem, Card} from 'react-bootstrap'
+import { ListGroup, ListGroupItem, Card} from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 import { withRouter } from "react-router-dom";
 import {fetchMovie} from "../actions/movieActions";
 import {submitReview} from "../actions/movieActions";
-import { Col, Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import { Col, Form, FormGroup, FormControl, Button } from 'react-bootstrap';
 import * as PropTypes from "prop-types";
 import {BsStarFill} from "react-icons/bs";
 //support routing by creating a new component
@@ -67,7 +67,7 @@ class Movie extends Component {
             return (
                 <Form horizontal>
                     <FormGroup controlId="Name">
-                        <Col componentClass={ControlLabel} sm={2}>
+                        <Col  sm={2}>
                             Name
                         </Col>
                         <Col sm={10}>
@@ -76,7 +76,7 @@ class Movie extends Component {
                     </FormGroup>
 
                     <FormGroup controlId="Review">
-                        <Col componentClass={ControlLabel} sm={2}>
+                        <Col  sm={2}>
                             Review
                         </Col>
                         <Col sm={10}>
@@ -85,7 +85,7 @@ class Movie extends Component {
                     </FormGroup>
 
                     <FormGroup controlId="Rating">
-                        <Col componentClass={ControlLabel} sm={2}>
+                        <Col sm={2}>
                             Rating
                         </Col>
                         <Col sm={10}>
