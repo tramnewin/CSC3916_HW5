@@ -37,7 +37,7 @@ class MovieList extends Component {
             return (
                 <Carousel onSelect={this.handleSelect}>
                     {movieList.map((movie) =>
-                        <Carousel.Item key={movie._id}>
+                        <Carousel.Item key={movie.Title}>
                             <div>
                                 <LinkContainer to={'/movies/'+movie.Title} onClick={()=>this.handleClick(movie)}>
                                     <Nav.Link><Image className="image" src={movie.imageURL} thumbnail /></Nav.Link>
