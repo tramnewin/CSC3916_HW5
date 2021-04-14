@@ -46,24 +46,19 @@ class MovieDetail extends Component {
                     </Card.Body>
                     <Card.Body>
                         <Form className='form-horizontal'>
-                            <Form.Group controlId="Title">
-                                <Form.Label>Title</Form.Label>
-                                <Form.Control onChange={this.updateDetails} value={this.state.details.username} type="Title" placeholder="Enter Title" />
-                            </Form.Group>
-
                             <Form.Group controlId="Name">
                                 <Form.Label>Name</Form.Label>
-                                <Form.Control onChange={this.updateDetails} value={this.state.details.password}  type="Name" placeholder="Enter Name" />
+                                <Form.Control onChange={} value={}  type="Name" placeholder="Enter Name" />
                             </Form.Group>
                             <Form.Group controlId="Rating">
                                 <Form.Label>Rating</Form.Label>
-                                <Form.Control onChange={this.updateDetails} value={this.state.details.password}  type="Rating" placeholder="Enter Rating" />
+                                <Form.Control onChange={} value={}  type="Rating" placeholder="Enter Rating" />
                             </Form.Group>
                             <Form.Group controlId="Review">
                                 <Form.Label>Name</Form.Label>
-                                <Form.Control onChange={this.updateDetails} value={this.state.details.password}  type="Review" placeholder="Enter Review" />
+                                <Form.Control onChange={} value={}  type="Review" placeholder="Enter Review" />
                             </Form.Group>
-                            <Button onClick={this.login}>Sign in</Button>
+                            <Button onClick={}>Submit</Button>
                         </Form>
                     </Card.Body>
                 </Card>
