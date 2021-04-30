@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { fetchMovie } from "../actions/movieActions";
 import {connect} from 'react-redux';
-import {Button, Card, Form, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { BsStarFill } from 'react-icons/bs'
 import { Image } from 'react-bootstrap';
 
@@ -43,23 +43,6 @@ class MovieDetail extends Component {
                                 &nbsp;  <BsStarFill /> {Review.Rating}
                             </p>
                         )}
-                    </Card.Body>
-                    <Card.Body>
-                        <Form className='form-horizontal'>
-                            <Form.Group controlId="Name">
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control onChange={} value={}  type="Name" placeholder="Enter Name" />
-                            </Form.Group>
-                            <Form.Group controlId="Rating">
-                                <Form.Label>Rating</Form.Label>
-                                <Form.Control onChange={} value={}  type="Rating" placeholder="Enter Rating" />
-                            </Form.Group>
-                            <Form.Group controlId="Review">
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control onChange={} value={}  type="Review" placeholder="Enter Review" />
-                            </Form.Group>
-                            <Button onClick={}>Submit</Button>
-                        </Form>
                     </Card.Body>
                 </Card>
 
